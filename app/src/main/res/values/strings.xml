@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Cupid Swap</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dating">Dating</string>
+    <string name="message">Message</string>
+    <string name="profile">Profile</string>
+
+    <string name="open_nav">Open</string>
+    <string name="close_nav">Close</string>
+
+</resources>

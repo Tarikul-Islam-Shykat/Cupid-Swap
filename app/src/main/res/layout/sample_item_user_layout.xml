@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/_4sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_10sdp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_180sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/gradient_shape" />
+
+        <ImageView
+            android:id="@+id/img_userImage_dating"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/_5sdp"
+
+            >
+
+            <ImageView
+                android:id="@+id/img_datingCard_chat"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:padding="@dimen/_5sdp"
+
+                android:src="@drawable/dating_card_chat" />
+
+            <ImageView
+                android:id="@+id/img_datingCard_videoCall"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:padding="@dimen/_5sdp"
+
+                android:src="@drawable/dating_card_video_icon" />
+
+            <ImageView
+                android:id="@+id/img_datingCard_heart"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:padding="@dimen/_5sdp"
+
+                android:src="@drawable/dating_card_heart" />
+        </LinearLayout>
+
+        <!--txtView4-->
+        <TextView
+            android:id="@+id/txt_datingCard_userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--txtView5-->
+        <TextView
+            android:id="@+id/txt_datingCard_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/txt_datingCard_userEmail"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

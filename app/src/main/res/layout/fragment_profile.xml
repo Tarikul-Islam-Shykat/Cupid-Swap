@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Screens.Fragments.ProfileFragment"
+
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:background="@color/primary"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:elevation="12dp"
+                app:cardCornerRadius="40dp"
+                android:layout_centerHorizontal="true"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9"
+                android:layout_centerInParent="true"
+                >
+                <ImageView
+                    android:id="@+id/profile_userImage"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/sample_user_image"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:enabled="false"
+                    >
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:padding="@dimen/_5sdp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_profileUSerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:text="Profile"
+                android:enabled="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:padding="@dimen/_5sdp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_profileUserNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number"
+                android:text="02345678901"
+                android:enabled="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:padding="@dimen/_5sdp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_profileUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:text="logan@gmail.com"
+                android:enabled="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:padding="@dimen/_5sdp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_profileUserCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:text="London"
+                android:enabled="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:padding="@dimen/_5sdp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_profileUserAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:text="Enter age"
+            android:enabled="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:padding="@dimen/_5sdp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_profileUserstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Status"
+                android:text="Enter Status"
+                android:enabled="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_margin="@dimen/_5sdp"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_editProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit Profile"
+                android:textAllCaps="false"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="visible"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_saveProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save Profile"
+                android:textAllCaps="false"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="gone"
+                android:textColor="@color/green"
+                />
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_profile_logOut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Log Out"
+                android:textAllCaps="false"
+                android:layout_margin="@dimen/_2sdp"
+
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

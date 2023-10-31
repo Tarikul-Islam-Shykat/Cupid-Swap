@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.auth.Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:src="@drawable/undraw_walking_together_7d2e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:visibility="visible"
+        android:id="@+id/numberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="-30dp"
+
+        app:cardCornerRadius="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Number" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_userNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/call_icon"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="Number"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/btn_sendOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/circular_border_shape"
+                android:gravity="center"
+                android:text="Send OTP"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+            />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:visibility="gone"
+        android:id="@+id/otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_12ssp"
+        android:layout_marginTop="-40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_12sdp"
+            >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your OTP" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_userOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter OTP"
+                    android:drawableLeft="@drawable/otp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:inputType="number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/btn_verifyOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Verify OTP"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12ssp"
+                android:background="@drawable/circular_border_shape"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+            />
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

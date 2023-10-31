@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "552330661874",
+    "project_id": "cupidswap-b0db5",
+    "storage_bucket": "cupidswap-b0db5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552330661874:android:a0a2ed245f305e7fc6e56b",
+        "android_client_info": {
+          "package_name": "com.example.cupidswap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQcoOerwHgboFIL-LO4kszzllQyu4PXZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

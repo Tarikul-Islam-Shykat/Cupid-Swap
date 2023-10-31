@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:elevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_30sdp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lets get to know you a little better"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:layout_margin="@dimen/_5sdp"
+            />
+        <!--<com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/additonalInfoAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:drawablePadding="@dimen/_5sdp"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <EditText
+            android:id="@+id/edt_addInfoAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:hint="Enter your age"
+            />
+
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_15sdp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/additonalinfoStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Relationship Status"
+                android:drawablePadding="@dimen/_5sdp"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_margin="@dimen/_5sdp"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_editAdditionalInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:textAllCaps="false"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="visible"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_addionalIn_saveAndClose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:layout_margin="@dimen/_2sdp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
